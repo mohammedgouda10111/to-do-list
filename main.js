@@ -22,7 +22,22 @@ function addTask() {
 
     input.value = "";
   }
+  // warn user to enter task
+  else {
+    if (task === "") {
+      alert("Please enter your task name");
+    }
+  }
 }
+
+// warn user to enter task
+
+// addEventListener('click' , function(){
+//   let task = input.value
+//   if(task.trim() === ""){
+//     alert("Please enter your task name")
+//   }
+// })
 
 function removeTask(event) {
   let taskItem = event.target.parentNode;
