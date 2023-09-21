@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <!-- Include Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Include custom CSS -->
+    <style>
+        .container {
+            margin-top: 20px;
+        }
+
+        .task {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+        }
+    </style>
+    <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+    <div class="container">
+        <h2 class=" text-center">To-Do List</h2>
+        <div id="tasks">
+            <!-- Tasks will be displayed here -->
+        </div>
+        <div class="input-group mb-3">
+            <input type="text" id="task-input" class="form-control" placeholder="Add a new task" aria-label="Add a new task"
+            aria-describedby="add-button">
+            <div class="input-group-append">
+            <button class="btn btn-primary" id="add-btn" type="button">Add</button>
+            </div>
+        </div>
+        <!-- Add task list here -->
+        <ul id="task-list"></ul>
+    </div>
+
+    <!-- Script File-->
+    <script src="./main.js"></script>
+    </body>
+
+</html>
